@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; img-src data:; form-action 'none'; base-uri 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://kimman.kr/pyeongeo">
+<title>학기말 종합의견 도우미 · 새 주소로 옮겼습니다</title>
+<style>
+  :root{color-scheme:light dark;--bg:#f4f6fb;--card:#fff;--ink:#171b26;--ink2:#4b5263;--pri:#2f5bd3;--line:#e1e6ef;--ok:#1a8a6a}
+  @media (prefers-color-scheme:dark){:root{--bg:#0b101b;--card:#131a28;--ink:#eef2f9;--ink2:#c0c8d8;--pri:#8aa5ff;--line:#26314a;--ok:#5fd7ab}}
+  body{margin:0;min-height:100vh;display:grid;place-items:center;padding:1rem;background:var(--bg);color:var(--ink);font:17px/1.65 "Pretendard","Malgun Gothic",sans-serif;word-break:keep-all}
+  main{width:min(32rem,100%);padding:1.75rem;border:1px solid var(--line);border-radius:1.25rem;background:var(--card);box-shadow:0 10px 30px -14px rgba(20,30,60,.3)}
+  h1{margin:0 0 .5rem;font-size:1.35rem;letter-spacing:-.03em}
+  p{margin:.4rem 0;color:var(--ink2)}
+  .go{display:block;margin-top:1rem;padding:.9rem;border-radius:.9rem;background:var(--pri);color:#fff;font-weight:800;text-align:center;text-decoration:none}
+  .save{display:block;width:100%;margin-top:.8rem;padding:.9rem;border:0;border-radius:.9rem;background:var(--ok);color:#fff;font:inherit;font-weight:800;cursor:pointer}
+  ol{margin:.6rem 0 0;padding-left:1.3rem;color:var(--ink2)}
+  [hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+  <h1>새 주소로 옮겼습니다</h1>
+  <p>학기말 종합의견 도우미는 이제 <b>kimman.kr/pyeongeo</b>에서 씁니다.</p>
+  <p id="moving">새 주소로 이동하는 중입니다…</p>
+  <section id="rescue" hidden>
+    <p>이 브라우저에 예전 주소에서 입력한 기록(학급 <b id="n"></b>개)이 있습니다. 새 주소로 옮겨 가세요.</p>
+    <ol><li>아래 <b>[기록 백업 받기]</b></li><li><b>[새 주소로 가기]</b> → 1단계 <b>[백업 불러오기]</b>에서 받은 파일 고르기</li></ol>
+    <button type="button" class="save" id="save">기록 백업 받기</button>
+  </section>
+  <a class="go" href="https://kimman.kr/pyeongeo">새 주소로 가기</a>
+</main>
+<script src="/pyeongeo/move.js"></script>
+</body>
+</html>
